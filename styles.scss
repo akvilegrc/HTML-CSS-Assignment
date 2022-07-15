@@ -1,0 +1,70 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  width: 100%;
+}
+
+button {
+  border-color: #ff8139;
+  border-radius: 40px;
+  border-width: 4px;
+  color: #111111;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  padding: 23px 56px;
+}
+
+.graphic {
+  width: 189.62px;
+  height: 278px;
+}
+
+.graphic img {
+  object-fit: contain;
+}
+
+h4 {
+  color: #ff3998;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+}
+
+html {
+  width: 100%;
+}
+
+html {
+  padding: 2rem;
+}
+nav {
+  display: none;
+}
+
+p {
+    font-size: 20px;
+    
+}
+
+.press {
+    display: flex;
+
+}
+
+.upsell-image {
+  background-image: url(background.svg);
+  height: 326px;
+}
