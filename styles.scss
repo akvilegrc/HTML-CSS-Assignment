@@ -1,6 +1,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
+  padding: 4rem;
   width: 100%;
 }
 
@@ -21,7 +22,6 @@ button {
 header {
   display: block;
   height: 10rem;
-  padding: 2rem;
 }
 
 .header-content {
@@ -102,16 +102,20 @@ nav {
 }
 
 .press {
-  display: flex;
-  flex-flow: column-reverse wrap-reverse;
-  max-height: 89px;
+  padding-top: 6rem;
+  margin-bottom: 6rem;
+
+  img {
+    height: 5rem;
+  }
+
+  .invisible {
+    display: none;
+  }
 }
 
-.invisible {
-  display: hidden;
-}
 .upsell {
-  background-image: linear-gradient(to right, #ff3998, #ff8139, #39ffa0);
+  background-image: linear-gradient(to right, #ff3998, #ff8139, #e4fa3f);
   height: 30rem;
   padding: 12rem 2.5rem 0 2.5rem;
 
@@ -125,5 +129,74 @@ nav {
     font-size: 3rem;
     line-height: 3.5rem;
     font-weight: lighter;
+  }
+}
+
+.showcase {
+    a {
+        color: #555555;
+    }
+  .eth {
+    height: 3rem;
+  }
+  h2 {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .nft {
+    width: max-content;
+  }
+
+  .nft-bottom {
+    display: flex;
+    background-color: #eeeeee;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    justify-content: space-between;
+    padding: 0 3rem 0 3rem;
+    margin-bottom: 12rem;
+    margin-top: 0;
+  }
+
+  .nft-top {
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+
+.orange {
+    color: #ff8139;
+}
+
+.gray {
+    color:#555555
+}
+
+  p {
+   color: #555555;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 3.5rem;
+  }
+
+  .price-section {
+    text-align: right;
+  }
+
+  img {
+    height: 40rem;
   }
 }
