@@ -5,66 +5,125 @@ body {
 }
 
 button {
+  background-color: white;
   border-color: #ff8139;
-  border-radius: 40px;
-  border-width: 4px;
+  border-radius: 6rem;
+  border-width: 0.45rem;
   color: #111111;
   font-family: "Inter", sans-serif;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 600;
-  padding: 23px 56px;
-}
-
-.graphic {
-  width: 189.62px;
-  height: 278px;
-}
-
-.graphic img {
-  object-fit: contain;
-}
-
-h4 {
-  color: #ff3998;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  margin-top: 1rem;
+  padding: 3rem 6rem;
 }
 
 header {
+  display: block;
+  height: 10rem;
+  padding: 2rem;
+}
+
+.header-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+
+  img {
+    padding: 0 2rem;
+  }
+
+  .landing {
+    height: 4.5rem;
+  }
+
+  .menu {
+    height: 2.7rem;
+  }
 }
 
 .hero {
   display: flex;
+  height: 70rem;
+  padding: 2rem 2rem 0 2rem;
+
+  .text {
+    width: 65%;
+
+    h1 {
+      font-size: 6rem;
+      font-weight: 900;
+      line-height: 6.5rem;
+    }
+
+    h4 {
+      color: #ff3998;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 19px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 3rem;
+      line-height: 4rem;
+      font-weight: 500;
+      color: #555555;
+    }
+    .clown-thing {
+      width: 100%;
+
+      img {
+        position: absolute;
+      }
+    }
+  }
 }
 
 html {
   width: 100%;
 }
 
-html {
-  padding: 2rem;
-}
 nav {
   display: none;
 }
 
-p {
-    font-size: 20px;
-    
+@media only screen and (min-width: 1200px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu {
+    display: none;
+  }
 }
 
 .press {
-    display: flex;
-
+  display: flex;
+  flex-flow: column-reverse wrap-reverse;
+  max-height: 89px;
 }
 
-.upsell-image {
-  background-image: url(background.svg);
-  height: 326px;
+.invisible {
+  display: hidden;
+}
+.upsell {
+  background-image: linear-gradient(to right, #ff3998, #ff8139, #39ffa0);
+  height: 30rem;
+  padding: 12rem 2.5rem 0 2.5rem;
+
+  h2 {
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: lighter;
+  }
 }
