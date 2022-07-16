@@ -1,7 +1,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  padding: 4rem;
+  padding: 4rem 0 4rem 4rem;
   width: 100%;
 }
 
@@ -17,6 +17,12 @@ button {
   font-weight: 600;
   margin-top: 1rem;
   padding: 3rem 6rem;
+}
+
+.footer-upsell {
+  display: flex;
+  height: 70rem;
+  overflow: hidden;
 }
 
 header {
@@ -45,40 +51,43 @@ header {
 
 .hero {
   display: flex;
-  height: 70rem;
-  padding: 2rem 2rem 0 2rem;
+  height: 75rem;
+  position: relative;
+  overflow: hidden;
 
-  .text {
-    width: 65%;
+  .graphic {
 
-    h1 {
-      font-size: 6rem;
-      font-weight: 900;
-      line-height: 6.5rem;
+    img {
+      position: absolute;
+      height: 45em;
     }
+  }
+}
 
-    h4 {
-      color: #ff3998;
-      font-weight: 700;
-      font-size: 2rem;
-      line-height: 19px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
+.text {
+  width: 73.5%;
 
-    p {
-      font-size: 3rem;
-      line-height: 4rem;
-      font-weight: 500;
-      color: #555555;
-    }
-    .clown-thing {
-      width: 100%;
+  h1 {
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 9rem;
+  }
 
-      img {
-        position: absolute;
-      }
-    }
+  h4 {
+    color: #ff3998;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-weight: 500;
+    color: #555555;
+    width: 90%;
   }
 }
 
@@ -102,6 +111,7 @@ nav {
 }
 
 .press {
+  display: flex;
   padding-top: 6rem;
   margin-bottom: 6rem;
 
@@ -115,13 +125,13 @@ nav {
 }
 
 .upsell {
-  background-image: linear-gradient(to right, #ff3998, #ff8139, #e4fa3f);
+  background-image: linear-gradient(to right, #ff3998, #ff8139, #c9cd34);
   height: 30rem;
   padding: 12rem 2.5rem 0 2.5rem;
 
   h2 {
-    font-size: 5rem;
-    font-weight: 500;
+    font-size: 6rem;
+    font-weight: 600;
     margin-bottom: 2rem;
   }
 
@@ -133,15 +143,15 @@ nav {
 }
 
 .showcase {
-    a {
-        color: #555555;
-    }
+  a {
+    color: #555555;
+  }
   .eth {
     height: 3rem;
   }
   h2 {
-    font-size: 5rem;
-    font-weight: 500;
+    font-size: 6rem;
+    font-weight: 600;
   }
 
   h4 {
@@ -157,8 +167,14 @@ nav {
     margin-bottom: 1.5rem;
   }
 
+  .nft-row {
+    display: flex;
+    overflow: auto;
+  }
+
   .nft {
     width: max-content;
+    margin-right: 6rem;
   }
 
   .nft-bottom {
@@ -177,16 +193,16 @@ nav {
     margin-bottom: 0;
   }
 
-.orange {
+  .orange {
     color: #ff8139;
-}
+  }
 
-.gray {
-    color:#555555
-}
+  .gray {
+    color: #555555;
+  }
 
   p {
-   color: #555555;
+    color: #555555;
     font-size: 3rem;
     margin-top: 0;
     margin-bottom: 3.5rem;
