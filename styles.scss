@@ -1,0 +1,345 @@
+@mixin paragraph-font {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  font-weight: 500;
+}
+
+@mixin h4-font {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  width: 100%;
+}
+
+button {
+  background-color: white;
+  border-color: #ff8139;
+  border-radius: 6rem;
+  border-width: 0.65rem;
+  color: #111111;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 3rem 6rem;
+}
+
+footer {
+  .bottom {
+    display: flex;
+    padding: 7rem 3.5rem 11rem 3.5rem;
+  }
+  .copyright,
+  .launching {
+    height: 3rem;
+  }
+
+  .launching {
+    display: none;
+  }
+  p {
+    @include paragraph-font;
+    color: #555555;
+  }
+
+  .footer-left {
+    padding-left: 3.5rem;
+
+    .landing {
+      padding-top: 4rem;
+    }
+
+    .icon {
+      height: 2.5rem;
+      margin-right: 2rem;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    flex-wrap: wrap;
+    ul {
+      list-style-type: none;
+      padding-top: 3rem;
+      margin-left: 6rem;
+    }
+
+    a {
+      font-size: 3rem;
+      color: #555555;
+    }
+
+    h4 {
+      @include h4-font;
+      color: #555555;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    li {
+      font-size: 1rem;
+    }
+  }
+
+  footer {
+    .launching {
+      display: block;
+    }
+  }
+}
+
+.footer-upsell {
+  display: flex;
+  height: 80rem;
+  position: relative;
+  padding-left: 3.5rem;
+  overflow: hidden;
+
+  .graphic {
+    img {
+      height: 70rem;
+      position: absolute;
+      margin-top: 11rem;
+    }
+  }
+
+  .text {
+    width: 56%;
+  }
+}
+
+html {
+  width: 100%;
+}
+
+header {
+  display: block;
+  height: 10rem;
+  padding: 3rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  img {
+    padding: 0 2rem;
+  }
+
+  .menu {
+    height: 2.7rem;
+  }
+}
+
+.hero {
+  display: flex;
+  height: 75rem;
+  position: relative;
+  padding-left: 3.5rem;
+  overflow: hidden;
+
+  .graphic {
+    img {
+      position: absolute;
+      height: 40em;
+    }
+  }
+}
+
+.text {
+  width: 76.5%;
+
+  h1 {
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 9rem;
+  }
+
+  h4 {
+    color: #ff3998;
+    @include h4-font;
+  }
+
+  p {
+    @include paragraph-font;
+    color: #555555;
+    width: 90%;
+  }
+}
+
+.landing {
+  height: 4.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .landing {
+    height: 2rem;
+  }
+}
+
+nav {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    width: 25rem;
+
+    a {
+      color: #555555;
+      font-weight: 500;
+    }
+
+    .sign-up {
+      color: #ff3998;
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+.press {
+  display: flex;
+  padding-top: 9rem;
+  padding-left: 3.5rem;
+  margin-bottom: 6rem;
+
+  img {
+    padding-bottom: 3rem;
+    height: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  img {
+    margin-right: 1rem;
+  }
+}
+
+.showcase {
+  padding-left: 3.5rem;
+
+  a {
+    color: #555555;
+  }
+  .eth {
+    height: 3rem;
+  }
+  h2 {
+    font-size: 6rem;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .nft-row {
+    display: flex;
+    overflow: auto;
+  }
+
+  .nft {
+    width: max-content;
+    margin-right: 6rem;
+  }
+
+  .nft-bottom {
+    display: flex;
+    background-color: #eeeeee;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    justify-content: space-between;
+    padding: 0 3rem 0 3rem;
+    margin-bottom: 12rem;
+    margin-top: 0;
+  }
+
+  .nft-top {
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+
+  .orange {
+    color: #ff8139;
+  }
+
+  .gray {
+    color: #555555;
+  }
+
+  p {
+    color: #555555;
+    @include paragraph-font;
+    margin-top: 0;
+    margin-bottom: 3.5rem;
+    padding-right: 2rem;
+  }
+
+  .price-section {
+    text-align: right;
+  }
+
+  img {
+    height: 40rem;
+  }
+}
+
+.upsell {
+  background-image: linear-gradient(to right, #ff3998, #ff8139, #c9cd34);
+  height: 35rem;
+  padding: 12rem 2.5rem 0 2.5rem;
+
+  h2 {
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    @include paragraph-font;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .upsell {
+    border-radius: 2rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+}
