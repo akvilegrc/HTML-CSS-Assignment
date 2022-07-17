@@ -32,6 +32,71 @@ button {
   padding: 3rem 6rem;
 }
 
+footer {
+  .bottom {
+    display: flex;
+    padding: 7rem 7rem 11rem 3.5rem;
+  }
+  .copyright,
+  .launching {
+    font-size: 3rem;
+  }
+
+  .launching {
+    display: none;
+  }
+  p {
+    @include paragraph-font;
+    color: #555555;
+  }
+
+  .footer {
+    height: 3rem;
+  }
+
+  .footer-left {
+    padding-left: 3.5rem;
+
+    .landing {
+      padding-top: 4rem;
+    }
+
+    .icon {
+      height: 2.5rem;
+      margin-right: 2rem;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    flex-wrap: wrap;
+    ul {
+      list-style-type: none;
+      padding-top: 3rem;
+      margin-left: 6rem;
+    }
+
+    li {
+      font-size: 3rem;
+      color: #555555;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      @include h4-font;
+      color: #555555;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
 .footer-upsell {
   display: flex;
   height: 80rem;
@@ -52,50 +117,8 @@ button {
   }
 }
 
-footer {
-
-    .bottom {
-        padding: 7rem 7rem 11rem 3.5rem;
-    }
-    p {
-        @include paragraph-font;
-        color: #555555;
-    }
-
-    .copyright {
-        height: 3rem;
-    }
-  .footer-left {
-    padding-left: 3.5rem;
-
-    .icon {
-        height: 2.5rem;
-        margin-right: 2rem;
-    }
-  }
-
-  .footer-right {
-    display: flex;
-    flex-wrap: wrap;
-    ul {
-      list-style-type: none;
-      padding-top: 3rem;
-      margin-left: 6rem;
-      
-    }
-
-    li {
-        font-size: 3rem;
-        color: #555555;
-        margin-bottom: 1rem;
-    }
-
-    h4 {
-      @include h4-font;
-      color: #555555;
-      
-    }
-  }
+html {
+  width: 100%;
 }
 
 header {
@@ -118,6 +141,7 @@ header {
     height: 2.7rem;
   }
 }
+
 
 .hero {
   display: flex;
@@ -155,12 +179,14 @@ header {
   }
 }
 
-html {
-  width: 100%;
-}
-
 .landing {
   height: 4.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+    .landing {
+       height: 2rem;
+}
 }
 
 nav {
@@ -171,6 +197,17 @@ nav {
   nav {
     display: flex;
     justify-content: space-around;
+    width: 25rem;
+
+    a {
+        color: #555555;
+        font-weight: 500;
+    }
+
+    .sign-up {
+      color: #ff3998;
+      
+    }
   }
 
   .menu {
@@ -188,25 +225,11 @@ nav {
     padding-bottom: 3rem;
     height: 6rem;
   }
-
-  .invisible {
-    display: none;
-  }
 }
 
-.upsell {
-  background-image: linear-gradient(to right, #ff3998, #ff8139, #c9cd34);
-  height: 35rem;
-  padding: 12rem 2.5rem 0 2.5rem;
-
-  h2 {
-    font-size: 6rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-  }
-
-  p {
-    @include paragraph-font;
+@media only screen and (min-width: 1200px) {
+  img {
+    margin-right: 1rem;
   }
 }
 
@@ -286,4 +309,28 @@ nav {
   img {
     height: 40rem;
   }
+}
+
+.upsell {
+  background-image: linear-gradient(to right, #ff3998, #ff8139, #c9cd34);
+  height: 35rem;
+  padding: 12rem 2.5rem 0 2.5rem;
+
+  h2 {
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    @include paragraph-font;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+    .upsell {
+        border-radius: 2rem;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
 }
